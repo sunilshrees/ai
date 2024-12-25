@@ -1,0 +1,49 @@
+.team-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  /* width: 500px; */
+  width: 100%;
+  height: 100%;
+  /* height: 200px; */
+}
+
+.team-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 30px;
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fab40a;
+}
+
+.team-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
